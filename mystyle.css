@@ -8,12 +8,16 @@
     float: left;
     width: 60%;
     padding: 10px;
+
+    background-color:#aaa;
 }
 
 .column2 {
     float: left;
     width: 40%;
     padding: 10px;
+
+    background-color:#bbb;
 }
 
 /* Clear floats after the columns */
@@ -22,16 +26,26 @@
     display: table;
     clear: both;
 }
-        /* General styles */
+
+/* General styles */
 
 html {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 10px;
 }
 
+header {
+    align-items: center; 
+    justify-content: center; 
+    display: flex;
+}
+
 h1 {
     font-size: 3rem;
+
+    text-transform: uppercase
 }
+
 h2 {
     font-size: 2rem;
 }
