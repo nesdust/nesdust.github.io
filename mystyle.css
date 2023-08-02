@@ -1,30 +1,51 @@
 
 * {
     box-sizing: border-box;
+    margin-right:0;
+    margin-left:0;
 }
 
-/* Create two equal columns that floats next to each other */
-.column1 {
-    float: left;
-    width: 60%;
-    padding: 10px;
-
-    background-color:#aaa;
+@font-face {
+    font-family: 'FuturaBT-Bold';
+    src: url(font/futurabt-bold-webfont-7b438ff794699aec3c7f1cd906b8efd38c33af575634d737ba8dc409a0de38d7.woff2) format("woff2");
+    font-weight: normal;
+    font-style: normal
 }
 
-.column2 {
-    float: left;
-    width: 40%;
-    padding: 10px;
+@font-face {
+    font-family: 'FuturaBT-BoldItalic';
+    src: url(font/futurabt-bolditalic-webfont-f3fafe1d2ffcb7f590030ed6b296aab3e6284f086845e0c30fb951ee802fe931.woff2) format("woff2");
 
-    background-color:#bbb;
+    font-weight: normal;
+    font-style: normal
 }
 
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    background-color: #FF632E;
+    padding: 20px;
+}
+
+.grid-item-header {
+    background-color: #FF632E;
+    padding: 20px;
+    font-size: 2rem;
+
+    color: white;
+    font-family: "FuturaBT-BoldItalic";
+    text-align: left;
+}
+
+.grid-item {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+
+    font-size: 1.5rem;
+    color: #FF632E;
+    font-family: "FuturaBT-Bold";
+    text-align: left;
 }
 
 /* General styles */
@@ -38,6 +59,8 @@ header {
     align-items: center; 
     justify-content: center; 
     display: flex;
+
+    font-family: "FuturaBT-BoldItalic";
 }
 
 h1 {
