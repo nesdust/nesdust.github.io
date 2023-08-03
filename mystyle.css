@@ -1,8 +1,6 @@
 
 * {
     box-sizing: border-box;
-    margin-right:0;
-    margin-left:0;
 }
 
 @font-face {
@@ -20,11 +18,24 @@
     font-style: normal
 }
 
+@font-face {
+    font-family: "foundation-icons";
+    src: url(foundation-icons-25761227484178e75ba2a3687530fd51643c5467e1cb0f2c22c87bc4ac3508c7.woff) format("woff");
+
+    /*src: url(//d1jqvnwovbbede.cloudfront.net/assets/foundation-icons-2526c3b0bd60d6f29e38c0f734da7e4ba18118bc49e0dc28c093c928a165823d.eot);*/
+    /*src: url(//d1jqvnwovbbede.cloudfront.net/assets/foundation-icons-2526c3b0bd60d6f29e38c0f734da7e4ba18118bc49e0dc28c093c928a165823d.eot?#iefix) format("embedded-opentype"),url(//d1jqvnwovbbede.cloudfront.net/assets/foundation-icons-25761227484178e75ba2a3687530fd51643c5467e1cb0f2c22c87bc4ac3508c7.woff) format("woff"),url(//d1jqvnwovbbede.cloudfront.net/assets/foundation-icons-57c83b3cc4782ae9a77c5b0b0429181dcbaab29e5551d6cdc3351f982626cc1d.ttf) format("truetype"),url(//d1jqvnwovbbede.cloudfront.net/assets/foundation-icons-77d9b34b9749ca930fcacd3fe5b3b786fa7885737f78ac05563b7db03844d291.svg#fontcustom) format("svg");*/
+    font-weight: normal;
+    font-style: normal
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: auto auto;
     background-color: #FF632E;
     padding: 20px;
+
+    /*border: 2px solid black;*/
+
 }
 
 .grid-item-header {
@@ -32,13 +43,13 @@
     padding: 20px;
     font-size: 2rem;
 
-    color: white;
+    /*color: black;*/
     font-family: "FuturaBT-BoldItalic";
     text-align: left;
 }
 
 .grid-item {
-    background-color: white;
+    background-color: #EAE292;
     border-bottom: 1px solid rgba(0, 0, 0, 0.8);
     padding: 20px;
 
@@ -48,11 +59,43 @@
     text-align: left;
 }
 
+.arrow_up:before {
+	font-family: "foundation-icons";
+	content: "\f10c";
+
+	color: #6ac69a;
+
+	padding-right: 5px;
+}
+
+
+.arrow_down:before {
+	font-family: "foundation-icons";
+	content: "\f109";
+	color: #ff642e;
+
+	padding-right: 5px;
+}
+
+.arrow_none:before {
+	font-family: "foundation-icons";
+	content: "\f10c";
+	
+	color: #EAE292;
+	padding-right: 5px;
+}
+
+/*.grid-item.member {
+
+}*/
+
 /* General styles */
 
 html {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 10px;
+
+    background-color: #EAE292
 }
 
 header {
@@ -64,7 +107,7 @@ header {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 
     text-transform: uppercase
 }
@@ -83,6 +126,7 @@ p {
 li,
 p {
     line-height: 1.5;
+    text-align: center
 }
 
 /* Description list styles */
