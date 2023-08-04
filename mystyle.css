@@ -98,6 +98,10 @@ html {
     background-color: #EAE292
 }
 
+body {
+    margin: 20px;
+}
+
 header {
     align-items: center; 
     justify-content: center; 
